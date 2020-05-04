@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>login</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<style>
+		
+		.back_img{
+			float: left;
+			margin-top: 15pt;
+			margin-left: 30pt;
+		}
+		.back_img img{
+			margin: 0;
+		}
+		.P{
+			float: right;
+			margin-right:18pt ;
+			margin-top: 15pt;
+		}
+		.P span{
+			font-size: 14pt;
+			margin: 0;
+			font-weight: bold;
+		}
+		.clearfix {
+				clear: both;
+		}
+		/*------*/
+		.welcome{
+			margin-top: 133pt;
+			margin-left: 40pt;
+		}
+		.welcome p{
+			font-weight: bold;
+			font-size: 24pt;
+		}
+		.ipt{
+			margin-top: 50pt;
+			margin-left: 40pt;
+		}
+		.text::-webkit-input-placeholder { /* Chrome/Opera/Safari */ 
+			color: white;
+			font-size: 12pt;
+			padding-left:50pt  ;
+		}
+		.text1::-webkit-input-placeholder { /* Chrome/Opera/Safari */ 
+			color: white;
+			font-size: 12pt;
+			padding-left: 10pt;
+		}
+		.ipt p{
+			font-size: 12pt;
+			margin: 0;
+			margin-top: 10pt;
+			margin-bottom: 5pt;
+		}
+		.text{
+			width: 250pt;	
+			border-style:none;
+			border-bottom-style:solid;
+			border-bottom-width:thin;
+			background-color: transparent;
+			border: 0;
+		}
+		.text1{
+			width: 210pt;	
+			border-style:none;
+			border-bottom-style:solid;
+			border-bottom-width:thin;
+			background-color: transparent;
+			border: 0;
+		}
+		
+		.dropdown{
+			float: left;
+			/*margin-bottom: 10pt;*/
+		}
+		.btn{
+			background-color: transparent;
+			width: 40pt;
+			padding-top: 0;
+		}
+		.underline{
+			margin-top: 5pt;
+			height: 0.5pt;
+			width: 250pt;
+			background: black;
+		}
+		.log_btn {
+				border-radius: 5px;
+				font-size: 18px;
+				background: rgb(171,153,155);
+				color: rgb(250,250,250);
+				border: 0px;
+				padding-left: 109pt;
+				padding-top: 10pt;
+				height: 54px;
+				margin-top: 50pt;
+				margin-left: 40pt;
+				width: 250pt;
+		}
+		.sp{
+			color: rgb(104,104,104);
+			font-size: 12pt;
+			margin-left: 100pt;
+			margin-top: 10pt;
+		}	
+		.sp span{
+			color: white;
+		}
+		.another{
+			margin-left: 40pt;
+			margin-top: 50pt;
+		}
+		.another p{
+			color: rgb(104,104,104);
+		}
+		.log_img{
+			float: left;
+			margin: 5px;
+		}	
+		</style>
+		
+	</head>
+
+	<body>
+		<img src="img/图层18.png" width="100%" height="100%" style="z-index: -100;position: absolute;left: 0;top: 0">
+		<div class="top">
+			<div class="back_img"><img src="img/返回.png"></div>
+			<div class="P"><span>游客进入</span></div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="welcome"><p>欢迎来到逆归</p></div>
+		<!--输入框-->
+		<div class="ipt">
+			<p>账号</p>
+			<!--下拉框-->
+			<div class="dropdown">
+ 				<button class="btn" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    				+86
+    				<span class="caret"></span>
+  				</button>
+  				<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    				<li role="separator" class="divider"></li>
+    				<li><a href="#">more</a></li>
+  				</ul>
+			</div>
+			<input class="text1" type="text" placeholder="请输入手机号|邮箱" />
+			<div class="underline"></div>
+			<p>密码</p>
+			<input class="text" type="text" placeholder="请输入密码" />
+			<div class="underline"></div>
+		</div>
+		<!--按钮-->
+		<div class="log_btn">登录</div>
+		<!--小字-->
+		<p class="sp">还没有账号，<span>立即注册</span></p>
+		<!--其他登陆方式-->
+		<div class="another">
+			<p>其他登陆方式</p>
+			<img class="log_img" src="img/qq.png" />
+			<img class="log_img" src="img/微信.png" />
+			<img class="log_img" src="img/apple.png" />
+			<img class="log_img" src="img/微博.png" />
+		</div>
+	</body>
+
+</html>
